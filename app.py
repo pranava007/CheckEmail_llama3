@@ -55,7 +55,34 @@ def extract_email_details(email_text):
 
 
 # Example email input
-email_text = input()
+email_text = """
+---------- Forwarded message ---------
+From: sales thinkfitness <thinkfitnesssales@gmail.com>
+Date: Sat, 8 Feb, 2025, 10:48
+Subject: Fwd: Buyer Details for "Karla Katta"
+To: <admin@hopelearning.net>
+
+---------- Forwarded message ---------
+From: IndiaMART <buyleads@indiamart.com>
+Date: Sat, Feb 8, 2025 at 8:36 AM
+Subject: Buyer Details for "Karla Katta"
+To: <thinkfitnesssales@gmail.com>
+
+Buy Lead through IndiaMART
+
+Buyer's Contact Details:
+Phone ✓ Email ✓
+HARIHARA SUDHAN S
+Pandian Traders, Theni, TN
+Click to call: +91-9994294292
+E-mail: pandiantradehub@gmail.com
+
+Member Since: 7 months
+Buylead Details:
+Karla Katta
+Material: Iron
+Finish: Polished
+"""
 
 # Run the function
 output = extract_email_details(email_text)
