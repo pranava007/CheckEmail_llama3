@@ -5,10 +5,9 @@ import time
 # Define LLaMA model
 MODEL = "llama3"
 
-# Function to interact with LLaMA and return JSON output
+# Function to extract email details
 def extract_email_details(email_text):
-    # Start execution time
-    start_time = time.time()
+    start_time = time.time()  # Start execution time
 
     # Define the prompt
     prompt = f"""
@@ -54,9 +53,8 @@ def extract_email_details(email_text):
     return structured_output
 
 
-# Example email input
+# Example email input (can be replaced with dynamic input)
 email_text = """
-
 Buy Lead through IndiaMART
 
 Buyer's Contact Details:
@@ -78,3 +76,4 @@ output = extract_email_details(email_text)
 
 # Print the structured JSON output
 print(json.dumps(output, indent=4))
+
